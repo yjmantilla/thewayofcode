@@ -1,4 +1,4 @@
-/*Can you make a heart with Tachycardia or arritmia*/ */
+/*Can you make a heart with Tachycardia or arritmia*/
 function setup() {
   // put setup code here
     createCanvas(700,700);
@@ -8,10 +8,14 @@ function setup() {
 states = [100,100,100,100,100,200,100,100,300];
 i=0;
 function draw() {
-    background(100);
-    heart(350, 300, states[i%states.length]);
+    background(255);
+    heart(350, 300, states[i]);
     fill(255,0,0);
     i = i+1;
+    if (i==states.length)
+    {
+      i = 0;
+    }
 }
 
 
